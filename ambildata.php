@@ -36,7 +36,7 @@ $port     = 1883;
 $username = "OPPO F9";
 $password = "asdfghjkl";
 $topic = "iot/suhu";
-$mqtt = new bluerhinos\phpMQTT($host, $port, "G.211.19.0098".rand());
+$mqtt = new bluerhinos\phpMQTT($host, $port, "G.211.19.0087".rand());
 
 buka_koneksi_mysq();
 if(!$mqtt->connect(true,NULL,$username,$password)){

@@ -2,7 +2,7 @@
 <?php
 require("phpMQTT.php");
 require("config.php");
-$topic="iot/kendali";
+$topic="iot/suhu";
 
 $message = @$_GET['message'];
 
@@ -21,13 +21,13 @@ if ($mqtt->connect(true,NULL,$username,$password)) {
 ?>
 <center>
     <tr>
-<a href="/mqtt/onoff.php?message=D1=1" class = "btn btn-success">D1 ON</a> &nbsp;
-<a href="/mqtt/onoff.php?message=D1=0" class = "btn btn-danger">D1 OFF</a>
+<a href="/MQTT-PHP/onoff.php?message=D1=1" class = "btn btn-success">D1 ON</a> &nbsp;
+<a href="/MQTT-PHP/onoff.php?message=D1=0" class = "btn btn-danger">D1 OFF</a>
 <br> <br>
-<a href="/mqtt/onoff.php?message=D2=1" class = "btn btn-success">D2 ON</a> &nbsp;
-<a href="/mqtt/onoff.php?message=D2=0" class = "btn btn-danger">D2 OFF</a>
+<a href="/MQTT-PHP/onoff.php?message=D2=1" class = "btn btn-success">D2 ON</a> &nbsp;
+<a href="/MQTT-PHP/onoff.php?message=D2=0" class = "btn btn-danger">D2 OFF</a>
 <br> <br>
-<a href="/mqtt/onoff.php?message=D3=1" class = "btn btn-success">D3 ON</a> &nbsp;
-<a href="/mqtt/onoff.php?message=D3=0" class = "btn btn-danger">D3 OFF</a> 
+<a href="/MQTT-PHP/onoff.php?message=D3=1" class = "btn btn-success">D3 ON</a> &nbsp;
+<a href="/MQTT-PHP/onoff.php?message=D3=0" class = "btn btn-danger">D3 OFF</a> 
     </tr>
 </center>
